@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogOut, Menu, X, Wallet, Moon, Sun, Radio, Home, Zap, Settings } from "lucide-react";
+import { Menu, X, Wallet, Moon, Sun, Radio, Home, Zap, Settings } from "lucide-react";
 import { useWallet } from './WalletAdapterProvider';
 import { useTheme } from '../context/ThemeContext';
 import { useI18n } from '../lib/i18n';

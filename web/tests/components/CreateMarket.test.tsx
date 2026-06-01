@@ -157,7 +157,7 @@ describe('CreateMarket page', () => {
     await fillValidForm(user);
     await user.click(screen.getByRole('button', { name: /create market/i }));
 
-    const status = await screen.findByRole('status');
+    const status = await screen.findByRole('alert', { name: /market created/i });
     expect(within(status).getByText(/^market created!$/i)).toBeInTheDocument();
     expect(within(status).getByText(/mock-tx-id-123/i)).toBeInTheDocument();
   });

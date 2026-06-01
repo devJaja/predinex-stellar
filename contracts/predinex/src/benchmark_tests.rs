@@ -71,6 +71,7 @@ fn bench<F: FnMut()>(operation: &'static str, iterations: u32, mut f: F) -> Benc
 struct BenchCtx {
     env: Env,
     client: PredinexContractClient<'static>,
+    #[allow(dead_code)]
     token_admin: Address,
     token_id: Address,
 }

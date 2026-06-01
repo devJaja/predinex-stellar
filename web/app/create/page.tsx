@@ -174,7 +174,7 @@ export default function CreateMarket() {
                     />
 
                     {txId && (
-                        <div role="status" className="mb-6 p-4 rounded-xl border border-green-500/30 bg-green-500/10 text-green-700 dark:text-green-400">
+                        <div role="alert" aria-label="Market created" className="mb-6 p-4 rounded-xl border border-green-500/30 bg-green-500/10 text-green-700 dark:text-green-400">
                             <p className="font-semibold">Market created!</p>
                             <p className="text-sm mt-1 font-mono break-all">Tx: {txId}</p>
                         </div>
